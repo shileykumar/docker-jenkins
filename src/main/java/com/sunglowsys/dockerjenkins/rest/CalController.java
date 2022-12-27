@@ -20,4 +20,10 @@ public class CalController {
         int result = service.addition(10, 20);
         return result;
     }
+
+    @GetMapping("/subtract")
+    public int subtract() {
+        int result = service.subtraction(20, 10);
+        return result;
+    }
 }
