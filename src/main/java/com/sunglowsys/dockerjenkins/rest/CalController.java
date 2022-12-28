@@ -21,9 +21,15 @@ public class CalController {
         return result;
     }
 
-    @GetMapping("/subtract")
+    @GetMapping("/sub")
     public int subtract() {
         int result = service.subtraction(20, 10);
+        return result;
+    }
+
+    @GetMapping("/mul")
+    public int multiplication() {
+        int result = service.multiplication(10,5);
         return result;
     }
 }
